@@ -60,3 +60,43 @@ class ProjectManager extends Instructor {
         return `${this.name} debugs ${student.name}'s code on ${subject}`;
     }
 }
+
+const john = new Instructor({
+    name: 'John',
+    location: 'Boston',
+    age: 30,
+    gender: 'male',
+    favLanguage: 'JavaScript',
+    specialty: 'Back-End',
+    catchPhrase: `Don't forget all the homies.`
+})
+
+const mike = new Instructor({
+    name: 'Michael',
+    location: 'Chicago',
+    age: 20,
+    gender: 'male',
+    favLanguage: 'Python',
+    specialty: 'Back-End',
+    catchPhrase: `Get back here!`
+})
+
+const anthony = new Student({
+    name: 'Anthony',
+    location: 'Boston',
+    age: 26,
+    gender: 'male',
+    previousBackground: 'college',
+    className: 'WebPT6',
+    favSubjects: ['Class constructors', 'HTML', 'CSS'];
+})
+
+const lily = new Student({
+    name: 'Lily',
+    location: 'Boston',
+    age: 26,
+    gender: 'female',
+    previousBackground: 'college',
+    className: 'WebPT6',
+    favSubjects: ['inheritance', 'arrays', 'CSS'];
+})
