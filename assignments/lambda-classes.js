@@ -23,7 +23,7 @@ class Instructor extends Person {
         return `Today we are learning about ${string}`;
     }
     grade(student, subject) {
-        return `${student.name} receivas a perfect score on ${subject}!`; 
+        return `${student.name} receives a perfect score on ${subject}!`; 
     }
 }
 
@@ -42,7 +42,7 @@ class Student extends Person {
     PRAssignment(subject) {
         return `${this.name} has submitted a PR for ${subject}`;
     }
-    sprintChallenge() {
+    sprintChallenge(subject) {
         return `${this.name} has begun sprint challenge on ${subject}`;
     }
 }
@@ -118,3 +118,10 @@ const james = new ProjectManager({
     gradeClassName: 'CS2',
     favInstructor: 'Kieran'
 })
+
+console.log(james.debugsCode(lily, 'Javascript'));
+console.log(anthony.className);
+console.log(anthony.PRAssignment('CSS'));
+console.log(mike.grade(lily, 'Classes'));
+console.log(meelah.name);
+console.log(john.demo('Testing stuff out'));
