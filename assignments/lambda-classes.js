@@ -45,6 +45,14 @@ class Student extends Person {
     sprintChallenge(subject) {
         return `${this.name} has begun sprint challenge on ${subject}`;
     }
+    graduate(grade) {
+        if (grade > 70) {
+            return 'Graduated!'
+        }
+        else {
+            return 'Keep trying.'
+        }
+    }
 }
 
 class ProjectManager extends Instructor {
@@ -125,3 +133,4 @@ console.log(anthony.PRAssignment('CSS'));
 console.log(mike.grade(lily, 'Classes'));
 console.log(meelah.name);
 console.log(john.demo('Testing stuff out'));
+console.log(anthony.graduate(40));
