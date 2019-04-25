@@ -8,15 +8,16 @@ Prototype Refactor
 
 */
 
-var GameObject = function(attr){
-    this.createdAt = attr.createdAt;
-    this.name = attr.name;
-    this.dimensions = attr.dimensions;
-  };
-  
-  GameObject.prototype.destroy = function() {
-    return `${this.name} was removed from the game.`
-  };
+class GameObject {
+    constructor(attr) {
+        this.createdAt = attr.createdAt;
+        this.name = attr.name;
+        this.dimensions = attr.dimensions;
+    }
+    destroy() {
+        return `${this.name} was removed from the game.`
+    }
+}
   
   /*
     === CharacterStats ===
