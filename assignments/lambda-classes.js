@@ -34,8 +34,8 @@ class Student extends Person {
         this.className = attr.className;
         this.favSubjects = attr.favSubjects;
     }
-    listSubjects(this.favSubjects) {
-        this.favSubjects.forEach(subject => {
+    listSubjects(favSubjects) {
+        favSubjects.forEach(subject => {
             console.log(subject);
         });
     }
@@ -88,7 +88,7 @@ const anthony = new Student({
     gender: 'male',
     previousBackground: 'college',
     className: 'WebPT6',
-    favSubjects: ['Class constructors', 'HTML', 'CSS'];
+    favSubjects: ["Class constructors", "HTML", "CSS"]
 })
 
 const lily = new Student({
@@ -98,5 +98,23 @@ const lily = new Student({
     gender: 'female',
     previousBackground: 'college',
     className: 'WebPT6',
-    favSubjects: ['inheritance', 'arrays', 'CSS'];
+    favSubjects: ["inheritance", "arrays", "CSS"]
+})
+
+const meelah = new ProjectManager({
+    name: 'Meelah',
+    location: 'San Diego',
+    age: 32,
+    gender: 'female',
+    gradeClassName: 'CS1',
+    favInstructor: 'Dan'
+})
+
+const james = new ProjectManager({
+    name: 'James',
+    location: 'Zimbabwe',
+    age: 35,
+    gender: 'male',
+    gradeClassName: 'CS2',
+    favInstructor: 'Kieran'
 })
